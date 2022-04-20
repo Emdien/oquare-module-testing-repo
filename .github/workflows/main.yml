@@ -22,3 +22,4 @@ jobs:
           archive-plot: 'true'
           ontology-folder: ontologias
           contents-folder: metricas-ontologias
+
