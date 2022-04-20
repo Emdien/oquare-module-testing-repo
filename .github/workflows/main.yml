@@ -16,7 +16,6 @@ jobs:
       - uses: actions/setup-python@v3
         with:
           python-version: '3.9'
-          cache: 'pip'
       - name: OQuaRE testing
         uses: Emdien/oquare-metrics@v0.0.8 # Uses an action in the root directory
         with:
