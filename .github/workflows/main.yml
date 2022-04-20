@@ -1,0 +1,25 @@
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: OQuaRE-metrics-test
+    steps:
+      # To use this repository's private action
+      # You need to check out the repo
+      - uses: actions/checkout@v2
+      # Configuration
+      - uses: actions/setup-java@v2
+        with:
+          distribution: 'temurin'
+          java-version: '8'
+      - uses: actions/setup-python@v3
+        with:
+          python-version: '3.9'
+          cache: 'pip'
+      - name: OQuaRE testing
+        uses: Emdien/oquare-metrics@v0.0.8 # Uses an action in the root directory
+        with:
+          archive-plot: 'true'
+          ontology-folder: ontologias
+          contents-folder: metricas-ontologias
