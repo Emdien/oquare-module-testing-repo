@@ -17,7 +17,7 @@ jobs:
         with:
           python-version: '3.9'
       - name: OQuaRE testing
-        uses: Emdien/oquare-metrics@v0.0.14 # Uses an action in the root directory
+        uses: Emdien/oquare-metrics@v0.0.15 # Uses an action in the root directory
         with:
           archive-plot: 'true'
           ontology-folder: ontologias
