@@ -23,5 +23,5 @@ jobs:
         with:
           ontology-files: ontologias/obi.owl
           contents-folder: metricas-ontologias
-          released: true
+          release: true
 
