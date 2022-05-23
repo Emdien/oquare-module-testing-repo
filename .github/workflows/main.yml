@@ -1,4 +1,6 @@
-on: [push]
+on: 
+  release:
+    types: [published]
 
 jobs:
   hello_world_job:
@@ -17,8 +19,9 @@ jobs:
         with:
           python-version: '3.9'
       - name: OQuaRE testing
-        uses: Emdien/oquare-metrics@v1.0.1
+        uses: Emdien/oquare-metrics@v1.2
         with:
           ontology-files: ontologias/obi.owl
           contents-folder: metricas-ontologias
+          released: true
 
