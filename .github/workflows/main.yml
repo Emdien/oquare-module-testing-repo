@@ -17,7 +17,7 @@ jobs:
         with:
           python-version: '3.9'
       - name: OQuaRE testing
-        uses: Emdien/oquare-metrics@v2
+        uses: Emdien/oquare-metrics@v2.1
         with:
           ontology-files: ontologias/ontoOBI.owl
           contents-folder: metricas-ontologias
