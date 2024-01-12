@@ -7,7 +7,7 @@ jobs:
     steps:
       # To use this repository's private action
       # You need to check out the repo
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       # Configuration
       - uses: actions/setup-java@v2
         with:
@@ -19,6 +19,6 @@ jobs:
       - name: OQuaRE testing
         uses: tecnomod-um/oquare-metrics@v2.2
         with:
-          ontology-files: ontologias/ontoOBI.owl
+          ontology-folders: ontologias
           contents-folder: metricas-ontologias
 
